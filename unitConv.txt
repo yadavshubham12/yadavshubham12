@@ -1,0 +1,19 @@
+#!/bin/bash -x
+
+read -p "Conversion of value inches into feet"
+read -p= x;
+inch=12;
+
+if [ $x -eq 1 ]
+then 
+      echo "Enter the value in inch :"
+      read -p= y;
+      value=$(awk 'BEGIN {print '$y'/'$inch'}')
+      echo "$y inch = $value feet"
+else
+      echo "Enter the value in feet :"
+      read -p= z;
+      value2=$(awk 'BEGIN [print '$z'"'$inch2'}')
+      echo "$d feet = $value2 inch"
+fi
+
